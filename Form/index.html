@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Формы </title>
+    <style>
+        .form {
+            width: 90%;
+            background-color: rgb(217, 255, 1);
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        form {
+            width: 50%;
+            margin: 0 auto;
+        }
+
+        body {
+            background-color: rgb(51, 255, 0);
+
+        }
+    </style>
+</head>
+
+<body>
+    <form action="" method="post">
+        <fieldset class="form">
+            <legend>Регистрация</legend>
+            Логин <input type="text" placeholder="Ввидите логин" name="login" required> <br><br>
+            Пароль <input type="password" placeholder="Введите пароль" name="password" required><br><br>
+            Почта <input type="email" placeholder="Введите почту" name="mail" required><br><br>
+        </fieldset>
+        <br> <input type="submit">
+        <br>
+        <br><input class="form" type="date">
+        <br>
+        <br>
+        <fieldset class="form">
+            <legend>Интересы</legend>
+            <label>
+                <input type="checkbox" name="interes" value="music" id="music"> Музыка <br>
+            </label>
+            <label>
+                <input type="checkbox" name="interes" value="sport"> Спорт<br>
+            </label>
+            <label>
+                <input type="checkbox" name="interes" value="programm" checked> Программирование <br>
+            </label>
+        </fieldset>
+        <fieldset class="form">
+            <legend>Доставка</legend>
+            <input type="radio" name="delivery"> Самовывоз <br>
+            <input type="radio" name="delivery"> Курьером <br>
+            <input type="radio" name="delivery" checked> Пункт выдачи <br>
+        </fieldset>
+        <h2>Выбор города</h2>
+        <select name="" id="">
+            <option selected disabled>Укажите город </option>
+            <optgroup label="Сибирь">
+                <option value="Тюмень"> Тюмень </option>
+            </optgroup>
+            <optgroup label="Центр">
+                <option value="Москва"> Москва </option>
+                <option value="Санкт-Петербург"> Санкт-Петербург </option>
+            </optgroup>
+            <option value="Владивосток"> Владивосток </option>
+            <option value="Мурманск"> Мурманск </option>
+        </select>
+        <br>
+        <br>
+        <textarea class="form" name="Комментарии" placeholder="Оставьте Ваш Комментарий"></textarea>
+        <br>
+        <br>
+        <input type="submit">
+        <br>
+        <br>
+        <button type="reset">Очистить форму</button>
+    </form>
+</body>
+
+</html>
